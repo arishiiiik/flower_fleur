@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEUR</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="catalog.css">
+    <script src="script.js"></script>
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+    <!-- меню и шапка -->
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="./images/лого.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./akaunt.html">Профиль</a></li>
+                    <li><a href="#block2">Наши букеты</a></li>
+                    <li><a href="#block3">Отзывы</a></li>
+                    <li><a href="#block7">Вопросы</a></li>
+                    <li><a href="#block8">Контакты</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </li>
+                    <li><a href="./index.html">Выйти</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <label for="burger-toggle" class="burger-btn">☰</label>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+
+
+        <div class="burger-modal">
+            <div class="burger-modal-content">
+                <label for="burger-toggle" class="close-burger">×</label>
+                <ul class="burger-menu-list">
+                    <li><a href="./akaunt.html">Профиль</a></li>
+                    <li><a href="#block2">Наши букеты</a></li>
+                    <li><a href="#block3">Отзывы</a></li>
+                    <li><a href="#block7">Вопросы</a></li>
+                    <li><a href="#block8">Контакты</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </li>
+                    <li><a href="./index.html">Выйти</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_shapka">
+            <div class="vector1">
+                <img src="./images/Vector1.png" alt="">
+            </div>
+            <div class="vector2">
+                <img src="./images/Vector2.png" alt="">
+            </div>
+            <div class="fon">
+                <img class="fon1" src="./images/fon1.png" alt="">
+                <img class="fon2" src="./images/fon2.png" alt="">
+            </div>
+            <div class="text_shapka">
+                <p class="p1">Говорите на языке цветов</p>
+                <p class="p2">Мы создаём эмоции, которые вы можете держать в руках. Дарите не цветы, а целую историю —
+                    вашу историю любви, восхищения или заботы.</p>
+                <form action="#block2">
+                    <button>Сделать заказ</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Главная -->
+    <main>
+        <!-- КОЛЛЕКЦИИ -->
+        <div class="block1" id="block1">
+            <p class="zagolovok">наши коллекции</p>
+            <div class="mini_block1">
+                <div class="mini1">
+                    <img src="./images/img3.png" alt="">
+                    <p class="p1">Классические <br> букеты</p>
+                </div>
+                <img src="" class="vector5" alt="">
+                <div class="mini1">
+                    <img src="./images/img4.png" alt="">
+                    <p class="p2">Свадебные <br>букеты</p>
+                </div>
+            </div>
+        </div>
+        <!-- КАТАЛОГ -->
+        <div class="block2" id="block2">
+            <p class="zagolovok">Классические букеты</p>
+            <div class="catalog">
+                <div class="kartochka">
+                    <img src="./images/kart1.png" alt="">
+                    <p class="p1">Весенний день</p>
+                    <p class="p2">Яркий букет из весенних тюльпанов и нарциссов. Подарит весеннее настроение в любое
+                        время года.</p>
+                    <div class="cena">
+                        <p class="p3">2 800 ₽</p>
+                        <button class="details-btn" data-image="./images/kart1.png" data-title="Весенний день"
+                            data-description="Нежный и яркий букет, который наполнит ваш дом весенним настроением даже в самый хмурый день. Идеальное сочетание свежести и элегантности."
+                            data-composition="Тюльпаны розовые,Нарциссы белые,Гипсофила,Эвкалипт" data-height="40-45 см"
+                            data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Крафт-бумага с декоративной лентой"
+                            data-care="Меняйте воду каждые 2 дня, подрезайте стебли под углом 45 градусов. Храните в прохладном месте, избегая прямых солнечных лучей."
+                            data-rating="4.8" data-reviews="24" data-price="2 800 ₽" data-old-price="3 200 ₽"
+                            data-badge="popular">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart2.png    " alt="">
+                    <p class="p1">Нежность пионов</p>
+                    <p class="p2">Яркий букет из весенних тюльпанов и нарциссов. Подарит весеннее настроение в любое
+                        время года.</p>
+                    <div class="cena">
+                        <p class="p3">4 200 ₽</p>
+                        <button class="details-btn" data-image="./images/kart2.png" data-title="Нежность пионов"
+                            data-description="Пышные пионы в обрамлении эвкалипта создают образ нежности и элегантности. Идеален для романтических моментов и особых торжеств."
+                            data-composition="Пионы розовые,Эвкалипт,Гипсофила,Зелень салал" data-height="35-40 см"
+                            data-diameter="30-35 см" data-season="Май-Июль"
+                            data-packaging="Двойная крафт-бумага с атласной лентой"
+                            data-care="Подрежьте стебли под углом 45°. Добавьте в воду питатель для цветов. Меняйте воду каждые 2 дня."
+                            data-rating="4.9" data-reviews="47" data-price="4 200 ₽" data-old-price=""
+                            data-badge="popular">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart3.png    " alt="">
+                    <p class="p1">Белый шик</p>
+                    <p class="p2">Элегантная композиция из белых лилий и гортензий - символ чистоты и совершенства.
+                        Идеален для торжественных мероприятий.</p>
+                    <div class="cena">
+                        <p class="p3">4 800 ₽</p>
+                        <button class="details-btn" data-image="./images/kart3.png" data-title="Белый шик"
+                            data-description="Элегантная композиция из белых лилий и гортензий - символ чистоты и совершенства. Идеален для торжественных мероприятий."
+                            data-composition="Лилии белые,Гортензии,Гипсофила,Эвкалипт" data-height="45-50 см"
+                            data-diameter="35-40 см" data-season="Круглый год"
+                            data-packaging="Белая глянцевая бумага с жемчужной лентой"
+                            data-care="Удаляйте тычинки лилий. Добавляйте в воду консервант. Держите вдали от фруктов."
+                            data-rating="4.9" data-reviews="35" data-price="4 800 ₽" data-old-price=""
+                            data-badge="luxury">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart4.png    " alt="">
+                    <p class="p1">Розовый туман</p>
+                    <p class="p2">Нежные розы и пионы в пастельных тонах выражают восхищение и нежность. Совершенство
+                        для романтических подарков.</p>
+                    <div class="cena">
+                        <p class="p3">2 800 ₽</p>
+                        <button class="details-btn" data-image="./images/kart4.png" data-title="Розовый туман"
+                            data-description="Нежные розы и пионы в пастельных тонах выражают восхищение и нежность. Совершенство для романтических подарков."
+                            data-composition="Розы нежно-розовые,Пионы,Альстромерии,Эвкалипт" data-height="40-45 см"
+                            data-diameter="30-35 см" data-season="Апрель-Сентябрь"
+                            data-packaging="Розовая шелковая бумага с перламутровой лентой"
+                            data-care="Добавьте в воду аспирин. Удаляйте увядшие лепестки. Держите при комнатной температуре."
+                            data-rating="4.8" data-reviews="39" data-price="4 500 ₽" data-old-price=""
+                            data-badge="popular">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart5.png    " alt="">
+                    <p class="p1">Фиолетовый туман</p>
+                    <p class="p2">Глубокие фиолетовые орхидеи и ирисы создают загадочную и романтическую атмосферу.</p>
+                    <div class="cena">
+                        <p class="p3">5 500 ₽</p>
+                        <button class="details-btn" data-image="./images/kart5.png" data-title="Фиолетовый туман"
+                            data-description="Глубокие фиолетовые орхидеи и ирисы создают загадочную и романтическую атмосферу."
+                            data-composition="Орхидеи фаленопсис,Ирисы,Лаванда,Эвкалипт" data-height="35-40 см"
+                            data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Фиолетовый бархат с серебряной нитью"
+                            data-care="Опрыскивайте воздушные корни. Избегайте перелива. Держите при стабильной температуре."
+                            data-rating="4.9" data-reviews="19" data-price="5 500 ₽" data-old-price=""
+                            data-badge="luxury">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart6.png    " alt="">
+                    <p class="p1">Летний рассвет</p>
+                    <p class="p2">Нежные полевые цветы в естественной композиции. Свежесть и простота в каждом стебле.
+                    </p>
+                    <div class="cena">
+                        <p class="p3">3 300 ₽</p>
+                        <button class="details-btn" data-image="./images/kart6.png" data-title="Летний рассвет"
+                            data-description="Нежные полевые цветы в естественной композиции. Свежесть и простота в каждом стебле."
+                            data-composition="Ромашки,Васильки,Колокольчики,Злаки" data-height="30-35 см"
+                            data-diameter="20-25 см" data-season="Июнь-Август"
+                            data-packaging="Льняная ткань с джутовым шпагатом"
+                            data-care="Часто подрезайте стебли. Используйте прохладную воду. Держите в тени."
+                            data-rating="4.6" data-reviews="35" data-price="2 800 ₽" data-old-price="3 300 ₽"
+                            data-badge="new">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart7.png    " alt="">
+                    <p class="p1">Темная ночь</p>
+                    <p class="p2">Загадочная композиция в глубоких темных оттенках. Букет для тех, кто ценит
+                        элегантность и таинственность.</p>
+                    <div class="cena">
+                        <p class="p3">5 800 ₽</p>
+                        <button class="details-btn" data-image="./images/kart7.png" data-title="Темная ночь"
+                            data-description="Загадочная композиция в глубоких темных оттенках. Букет для тех, кто ценит элегантность и таинственность. Идеален для вечерних мероприятий и особых случаев."
+                            data-composition="Розы черно-бордовые,Каллы темные,Скиммия черная,Эвкалипт гунни,Ягоды черноплодной рябины"
+                            data-height="45-50 см" data-diameter="30-35 см" data-season="Круглый год"
+                            data-packaging="Черная бархатная бумага с темно-серой атласной лентой"
+                            data-care="Используйте фильтрованную воду комнатной температуры. Подрезайте стебли каждые 3 дня. Держите в приглушенном освещении."
+                            data-rating="4.8" data-reviews="22" data-price="5 800 ₽" data-old-price=""
+                            data-badge="exclusive">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart8.png    " alt="">
+                    <p class="p1">Зимняя сказка</p>
+                    <p class="p2">Белые розы и эвкалипт создают образ зимней чистоты и свежести. Элегантно и
+                        торжественно.</p>
+                    <div class="cena">
+                        <p class="p3">4 700 ₽</p>
+                        <button class="details-btn" data-image="./images/kart8.png" data-title="Зимняя сказка"
+                            data-description="Белые розы и эвкалипт создают образ зимней чистоты и свежести. Элегантно и торжественно."
+                            data-composition="Розы белые,Эвкалипт,Аммобиум,Хлопок" data-height="40-45 см"
+                            data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Серебристая бумага с белой атласной лентой"
+                            data-care="Используйте холодную воду. Добавляйте лед в вазу. Держите в прохладном помещении."
+                            data-rating="4.8" data-reviews="44" data-price="4 100 ₽" data-old-price="4 700 ₽"
+                            data-badge="sale">подробнее</button>
+                    </div>
+
+                </div>
+                <div class="kartochka">
+                    <img src="./images/kart9.png    " alt="">
+                    <p class="p1">Золотой восход</p>
+                    <p class="p2">Солнечные герберы и хризантемы дарят радость и оптимизм. Яркие цвета поднимут
+                        настроение в любой день.</p>
+                    <div class="cena">
+                        <p class="p3">3 200 ₽</p>
+                        <button class="details-btn" data-image="./images/kart9.png" data-title="Золотой восход"
+                            data-description="Солнечные герберы и хризантемы дарят радость и оптимизм. Яркие цвета поднимут настроение в любой день."
+                            data-composition="Герберы желтые,Хризантемы,Зелень рускус,Гипсофила" data-height="35-40 см"
+                            data-diameter="30-35 см" data-season="Круглый год"
+                            data-packaging="Желтая крафт-бумага с декоративным шпагатом"
+                            data-care="Используйте высокую вазу. Подрезайте стебли ежедневно. Защищайте от прямого солнца."
+                            data-rating="4.6" data-reviews="42" data-price="3 200 ₽" data-old-price="3 800 ₽"
+                            data-badge="sale">подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <!-- СВАДЕБНЫЕ БУКЕТЫ -->
+            <p class="zagolovok">Свадебные букеты</p>
+            <div class="catalog">
+                <div class="kartochka">
+                    <img src="./images/svad1.png" alt="">
+                    <p class="p1">Свадебная феерия</p>
+                    <p class="p2">Роскошный свадебный букет невесты в классическом стиле. Белоснежные розы и орхидеи
+                        символизируют чистоту и вечную любовь.</p>
+                    <div class="cena">
+                        <p class="p3">7 200 ₽</p>
+                        <button class="details-btn" data-image="./images/svad1.png" data-title="Свадебная феерия"
+                            data-description="Роскошный свадебный букет невесты в классическом стиле. Белоснежные розы и орхидеи символизируют чистоту и вечную любовь. Идеально сбалансирован для комфортного держания."
+                            data-composition="Розы белые сорта 'Вендела',Орхидеи фаленопсис,Фрезии,Гипсофила,Эвкалипт популус,Стефанотис"
+                            data-height="35-40 см" data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Белая шелковая ткань с жемчужными бусинами и атласной лентой"
+                            data-care="Перед церемонией храните в холодильнике. После - поставьте в вазу с питательным раствором. Избегайте прямого контакта с платьем."
+                            data-rating="5.0" data-reviews="18" data-price="7 200 ₽" data-old-price=""
+                            data-badge="wedding">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/svad2.png" alt="">
+                    <p class="p1">Невеста в розовом</p>
+                    <p class="p2">Нежный свадебный букет в пастельных розовых тонах. Пионы и ранункулюсы создают мягкий
+                        романтичный образ.</p>
+                    <div class="cena">
+                        <p class="p3">6 500₽</p>
+                        <button class="details-btn" data-image="./images/svad2.png" data-title="Невеста в розовом"
+                            data-description="Нежный свадебный букет в пастельных розовых тонах. Пионы и ранункулюсы создают мягкий романтичный образ. Идеален для весенних и летних свадеб."
+                            data-composition="Пионы розовые,Ранункулюсы,Гортензии нежно-розовые,Эвкалипт,Гипсофила"
+                            data-height="30-35 см" data-diameter="25-30 см" data-season="Апрель-Август"
+                            data-packaging="Розовая шифоновая ткань с перламутровой лентой"
+                            data-care="Храните в прохладном месте до церемонии. Подрезайте стебли перед установкой в вазу. Избегайте прямых солнечных лучей."
+                            data-rating="4.9" data-reviews="31" data-price="6 500 ₽" data-old-price=""
+                            data-badge="wedding">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/svad3.png" alt="">
+                    <p class="p1">Морская невеста</p>
+                    <p class="p2">Свадебный букет в морской тематике с голубыми и белыми оттенками. Идеален для пляжной
+                        свадьбы или церемонии у воды.</p>
+                    <div class="cena">
+                        <p class="p3">2 800 ₽</p>
+                        <button class="details-btn" data-image="./images/svad3.png" data-title="Морская невеста"
+                            data-description="Свадебный букет в морской тематике с голубыми и белыми оттенками. Идеален для пляжной свадьбы или церемонии у воды. Символизирует чистоту и бесконечность."
+                            data-composition="Гортензии голубые,Розы белые,Дельфиниумы,Эустома,Морские ракушки"
+                            data-height="30-35 см" data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Голубая органза с белой лентой и жемчужными бусинами"
+                            data-care="Защищайте от соленого воздуха. Чаще опрыскивайте цветы. Держите в тени."
+                            data-rating="4.9" data-reviews="22" data-price="7 500 ₽" data-old-price=""
+                            data-badge="beach wedding">подробнее</button>
+
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/svad4.png" alt="">
+                    <p class="p1">Викторианская элегантность</p>
+                    <p class="p2">Свадебный букет в викторианском стиле с кружевными цветами и нежными оттенками.
+                        Романтика XIX века в современном исполнении.</p>
+                    <div class="cena">
+                        <p class="p3">8 200 ₽</p>
+                        <button class="details-btn" data-image="./images/svad4.png"
+                            data-title="Викторианская элегантность"
+                            data-description="Свадебный букет в викторианском стиле с кружевными цветами и нежными оттенками. Романтика XIX века в современном исполнении для ценителей классики."
+                            data-composition="Гортензии кремовые,Пионы белые,Ландыши,Фрезии,Гипсофила,Плющ"
+                            data-height="35-40 см" data-diameter="25-30 см" data-season="Круглый год"
+                            data-packaging="Кружевная ткать с атласной лентой и антикварными брошками"
+                            data-care="Нежные цветы требуют бережного обращения. Избегайте сквозняков. Меняйте воду ежедневно."
+                            data-rating="4.8" data-reviews="17" data-price="8 200 ₽" data-old-price=""
+                            data-badge="vintage wedding">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/svad5.png" alt="">
+                    <p class="p1">Страсть и чистота</p>
+                    <p class="p2">Смелый свадебный букет, где алые розы становятся ярким акцентом на фоне белоснежных
+                        цветов. Символизирует страстную любовь и чистоту чувств.</p>
+                    <div class="cena">
+                        <p class="p3">8 700 ₽</p>
+                        <button class="details-btn" data-image="./images/svad5.png" data-title="Страсть и чистота"
+                            data-description="Смелый свадебный букет, где алые розы становятся ярким акцентом на фоне белоснежных цветов. Символизирует страстную любовь и чистоту чувств. Для невесты, которая не боится быть яркой."
+                            data-composition="Розы алые,Розы белые,Орхидеи фаленопсис,Гипсофила,Эвкалипт,Ягоды красной смородины"
+                            data-height="35-40 см" data-diameter="30-35 см" data-season="Круглый год"
+                            data-packaging="Алая атласная лента с белым кружевом и золотой нитью"
+                            data-care="Разделите цветы по цветам в разные вазы после церемонии. Алые розы могут окрашивать воду - меняйте ее чаще. Подрезайте стебли под углом 45 градусов."
+                            data-rating="4.8" data-reviews="23" data-price="8 700 ₽" data-old-price=""
+                            data-badge="bold wedding">подробнее</button>
+                    </div>
+                </div>
+                <div class="kartochka">
+                    <img src="./images/svad6.png" alt="">
+                    <p class="p1">Сельское очарование</p>
+                    <p class="p2">Свадебный букет в стиле рустик с полевыми цветами и зеленью. Естественная красота и
+                        простота для свадьбы на природе.</p>
+                    <div class="cena">
+                        <p class="p3">5 200 ₽</p>
+                        <button class="details-btn" data-image="./images/svad6.png" data-title="Сельское очарование"
+                            data-description="Свадебный букет в стиле рустик с полевыми цветами и зеленью. Естественная красота и простота для свадьбы на природе. Создает атмосферу уюта и тепла."
+                            data-composition="Гортензии белые,Ромашки,Лаванда,Злаки,Эвкалипт,Ягоды"
+                            data-height="35-40 см" data-diameter="30-35 см" data-season="Май-Сентябрь"
+                            data-packaging="Льняная ткань с джутовым шпагатом и сухоцветами"
+                            data-care="Полевые цветы требуют частой смены воды. Подрезайте стебли каждый день. Держите в тени."
+                            data-rating="4.7" data-reviews="28" data-price="5 200 ₽" data-old-price=""
+                            data-badge="rustic wedding">подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block3" id="block3">
+            <p class="zagolovok_otzyv">Отзывы наших клиентов</p>
+            <div class="testimonials-section">
+                <div class="testimonials-container">
+                    <!-- Декоративные элементы -->
+                    <div class="flowers-decoration flowers-decoration-1">
+                        <i class="fas fa-leaf" style="font-size: 150px; color: #3C533A;"></i>
+                    </div>
+                    <div class="flowers-decoration flowers-decoration-2">
+                        <i class="fas fa-seedling" style="font-size: 150px; color: #3C533A;"></i>
+                    </div>
+
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Отзыв 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Заказывала букет "Нежность пионов" на годовщину свадьбы родителей. Флорист Анна
+                                помогла
+                                создать
+                                идеальную композицию! Пионы были настолько свежими, что продолжали распускаться еще
+                                3
+                                дня после
+                                получения. Родители были в восторге - мама сказала, что это самый красивый букет в
+                                ее
+                                жизни!
+                                Доставка пришла точно ко времени, курьер был очень вежлив.
+                            </p>
+                            <div class="client-info">
+                                <img src="./images/portret1.jpg" alt="Анна" class="client-avatar">
+                                <div class="client-details">
+                                    <h4>Филатова Юлия</h4>
+                                    <p>г. Вологда</p>
+                                    <div class="bouquet-mention">
+                                        <i class="fas fa-tag"></i>Заказала: "Нежность пионов"
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 2 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Регулярно заказываю цветы для жены в вашем салоне. В этот раз попробовал "Алую
+                                страсть"
+                                -
+                                25 идеальных алых роз. Жена была тронута до слез! Особенно порадовало, что розы
+                                простояли
+                                больше двух недель, постепенно раскрываясь. Спасибо за рекомендации по уходу -
+                                следили
+                                за
+                                водой и подрезали стебли, как советовали. Теперь только к вам!
+                            </p>
+                            <div class="client-info">
+                                <img src="./images/portret4.jpg" alt="Дмитрий" class="client-avatar">
+                                <div class="client-details">
+                                    <h4>Дмитрий Соколов</h4>
+                                    <p>г. Череповец</p>
+                                    <div class="bouquet-mention">
+                                        <i class="fas fa-tag"></i>Заказал: "Алая страсть"
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 3 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Заказывала свадебный букет и оформление зала. Результат превзошел все ожидания!
+                                Флорист Мария создала именно то, о чем я мечтала - нежные белые розы и гортензии
+                                в сочетании с эвкалиптом. Букет был не только красивым, но и удобным - простоял
+                                весь день, не теряя формы. Гости были в восторге от цветочных композиций на столах.
+                                Спасибо за воплощение моей мечты!
+                            </p>
+                            <div class="client-info">
+                                <img src="./images/portret2.jpg" alt="Екатерина" class="client-avatar">
+                                <div class="client-details">
+                                    <h4>Екатерина Иванова</h4>
+                                    <p>г. Грязовец</p>
+                                    <div class="bouquet-mention">
+                                        <i class="fas fa-tag"></i>Заказала: Свадебный букет
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 4 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Потрясающий сервис! Заказала срочную доставку букета "Лавандовые грезы" в другой
+                                город
+                                для лучшей подруги на день рождения. Несмотря на сжатые сроки, все было выполнено
+                                безупречно.
+                                Подруга звонила в слезах - от радости! Сказала, что это самый романтичный и нежный
+                                букет,
+                                который она когда-либо получала. Отдельное спасибо консультанту за помощь в выборе!
+                            </p>
+                            <div class="client-info">
+                                <img src="./images/portret3.jpg" alt="Мария" class="client-avatar">
+                                <div class="client-details">
+                                    <h4>Мария Сидорова</h4>
+                                    <p>г. Вологда</p>
+                                    <div class="bouquet-mention">
+                                        <i class="fas fa-tag"></i>Заказала: "Лавандовые грезы"
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Отзыв 5 -->
+                        <div class="testimonial-slide">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Заказывал "Бордовый вельвет" для делового партнера после успешного закрытия сделки.
+                                Букет произвел настоящий фурор в офисе! Партнер оценил не только красоту композиции,
+                                но и ее изысканность. Георгины и бордовые розы выглядели по-настоящему роскошно.
+                                Спасибо за то, что помогли произвести нужное впечатление - теперь это мой
+                                проверенный
+                                вариант для бизнес-подарков.
+                            </p>
+                            <div class="client-info">
+                                <img src="./images/portret5.jpg" alt="Алексей" class="client-avatar">
+                                <div class="client-details">
+                                    <h4>Алексей Комаров</h4>
+                                    <p>бизнес-партнер</p>
+                                    <div class="bouquet-mention">
+                                        <i class="fas fa-tag"></i>Заказал: "Бордовый вельвет"
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Стрелки навигации -->
+                    <button class="nav-arrow prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-arrow next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Индикаторы -->
+                <div class="testimonials-nav" id="testimonialsNav">
+                    <!-- Точки навигации будут добавлены через JS -->
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- ЧАСТО ЗАДАВАЕМЫЙ ВОПРОСЫ -->
+
+        <div class="block7" id="block7">
+            <p class="zagolovok">часто задаваемые вопросы</p>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <div class="faq-question">Как заказать букет с определенным посланием?</div>
+                    <div class="faq-answer">
+                        <p>Вы можете обратиться к нашему консультанту, который поможет подобрать цветы и составить
+                            композицию, точно передающую ваши чувства. Мы также предлагаем онлайн-консультации, где
+                            вы
+                            можете подробно обсудить детали вашего заказа.
+                            <br><br>
+                            Каждый наш флорист владеет языком цветов и поможет создать букет, который будет говорить
+                            именно то, что вы хотите выразит
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли заказать доставку в другой город?</div>
+                    <div class="faq-answer">
+                        <p>Да, мы осуществляем доставку по всей России через партнерские службы доставки. Сроки и
+                            стоимость доставки зависят от удаленности города и выбранного способа доставки.
+                            <br><br>
+                            Для заказа доставки в другой город свяжитесь с нашим менеджером, который рассчитает
+                            точную
+                            стоимость и сроки.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Как долго сохраняют свежесть ваши букеты?</div>
+                    <div class="faq-answer">
+                        <p>Мы работаем только с самыми свежими цветами от проверенных поставщиков. При правильном
+                            уходе
+                            наши букеты сохраняют свежесть от 7 до 14 дней.
+                            <br><br>
+                            К каждому заказу мы прилагаем подробную инструкцию по уходу, которая поможет продлить
+                            жизнь
+                            вашим цветам. Также наши флористы могут дать персональные рекомендации по уходу за
+                            конкретными видами цветов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какие способы оплаты вы принимаете?</div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем следующие способы оплаты:
+                            <br><br>Наличными курьеру при получении
+                            <br>Банковской картой онлайн на сайте
+                            <br>Apple Pay и Google Pay
+                            <br>Безналичный расчет для юридических лиц
+                            <br> Все онлайн-платежи защищены современными системами шифрования.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли изменить заказ после его оформления?</div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете изменить детали заказа до момента его передачи курьеру. Для этого свяжитесь
+                            с
+                            нашим менеджером по телефону, указанному на сайте.
+
+                            Если вы хотите изменить адрес доставки, время или состав букета, сообщите об этом как
+                            можно
+                            скорее. Мы сделаем все возможное, чтобы учесть ваши пожелания.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Предлагаете ли вы индивидуальный дизайн букетов?</div>
+                    <div class="faq-answer">
+                        <p>Да, мы специализируемся на создании индивидуальных букетов, которые отражают уникальные
+                            чувства и истории наших клиентов. Наши флористы работают с вами, чтобы создать именно ту
+                            композицию, которую вы представляете.
+                            <br><br>
+                            Для заказа индивидуального букета рекомендуется обратиться к нам заранее, чтобы у
+                            флористов
+                            было достаточно времени для реализации ваших идей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- КОНТАКТЫ -->
+    <div class="block8" id="block8">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <div class="contact-item">
+                    <h3>Адрес</h3>
+                    <p>г. Вологда, ул. Цветочная, д. 15</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@fleur.ru</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Время работы</h3>
+                    <p>Пн-Вс: 9:00-22:00</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Остались вопросы?</h2>
+                <form>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea placeholder="Ваш вопрос" rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="./images/лого.png" alt="FLEUR" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#block2">Наши букеты</a></li>
+                    <li><a href="#block3">Отзывы</a></li>
+                    <li><a href="#block7">Вопросы</a></li>
+                    <li><a href="#block8">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a href="#block2">Сделать заказ</a></li>
+                    <li><a href="./akaunt.html">Вернуться к профилю</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Возврат</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/tg.png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/vp.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/vk.png" alt="VK"></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-up btn-up_hide"></div>
+
+        <div class="footer-bottom">
+            <p class="copirait">&copy; 2025 FLEUR. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <!-- Модальное окно -->
+    <div id="bouquet-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                    <div class="image-badges">
+                        <span class="badge popular">Популярный</span>
+                        <span class="badge new">Новый</span>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+
+                    <!-- Рейтинг и отзывы -->
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                        <span class="reviews-count">(24 отзыва)</span>
+                    </div>
+
+                    <!-- Основное описание -->
+                    <div class="description-section">
+                        <h3>Описание букета</h3>
+                        <p id="modal-description"></p>
+                    </div>
+
+                    <!-- Состав букета -->
+                    <div class="composition-section">
+                        <h3>Состав букета</h3>
+                        <ul id="modal-composition">
+                            <!-- Будет заполняться через JS -->
+                        </ul>
+                    </div>
+
+
+                    <!-- Характеристики -->
+                    <div class="specs-section">
+                        <h3>Характеристики</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Высота:</span>
+                                <span class="spec-value" id="modal-height">40-45 см</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Диаметр:</span>
+                                <span class="spec-value" id="modal-diameter">25-30 см</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Сезон:</span>
+                                <span class="spec-value" id="modal-season">Круглый год</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Упаковка:</span>
+                                <span class="spec-value" id="modal-packaging">Крафт-бумага</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Уход -->
+                    <div class="care-section">
+                        <h3>Рекомендации по уходу</h3>
+                        <p id="modal-care">Меняйте воду каждые 2 дня, подрезайте стебли и избегайте прямых солнечных
+                            лучей.</p>
+                    </div>
+
+                    <!-- Цена и кнопка -->
+                    <div class="modal-price">
+                        <div class="price-section">
+                            <span id="modal-price" class="price"></span>
+                            <span class="old-price" id="modal-old-price">3 200 ₽</span>
+                        </div>
+                        <div class="actions">
+                            <button id="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <!-- Модальное окно корзины -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+
+            <div id="empty-cart" class="empty-cart">
+                <p>Ваша корзина пуста</p>
+                <button class="continue-shopping-btn">Продолжить покупки</button>
+            </div>
+
+            <div id="cart-content" class="cart-content">
+                <div id="cart-items" class="cart-items">
+                    <!-- Товары будут добавляться сюда -->
+                </div>
+
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <strong>Итого: <span id="cart-total">0 ₽</span></strong>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script>
+        const btnUp = {
+            el: document.querySelector('.btn-up'),
+            show() {
+                // удалим у кнопки класс btn-up_hide
+                this.el.classList.remove('btn-up_hide');
+            },
+            hide() {
+                // добавим к кнопке класс btn-up_hide
+                this.el.classList.add('btn-up_hide');
+            },
+            addEventListener() {
+                // при прокрутке содержимого страницы
+                window.addEventListener('scroll', () => {
+                    // определяем величину прокрутки
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+                    scrollY > 400 ? this.show() : this.hide();
+                });
+                // при нажатии на кнопку .btn-up
+                document.querySelector('.btn-up').onclick = () => {
+                    // переместим в начало страницы
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+        btnUp.addEventListener();
+    </script>
+</body>
+
+</html>

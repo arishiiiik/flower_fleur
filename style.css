@@ -1,0 +1,3319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Angst-Normal";
+    src: url(./fonts/Angst-Normal.otf);
+}
+
+@font-face {
+    font-family: "Angst-Bold";
+    src: url(./fonts/Angst-Bold.otf);
+}
+
+button {
+    cursor: pointer;
+}
+
+
+header {
+    height: 1080px;
+
+}
+
+.burger-order {
+    background: #3C533A !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border-radius: 30px !important;
+    margin: 20px auto !important;
+    display: block !important;
+    width: 80% !important;
+    max-width: 250px !important;
+    text-align: center !important;
+    font-size: 18px !important;
+}
+
+.burger-order:hover {
+    background: #7ba276 !important;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu a {
+    font-family: 'Angst-Normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3C533A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #7ba276;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7ba276;
+    transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.logo {
+    margin-left: 5%;
+}
+
+.vector1 {
+    margin-top: -7%;
+}
+
+.vector2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+}
+
+.fon {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: -37.8%;
+
+}
+
+.text_shapka {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -38%;
+    margin-left: 5%;
+
+}
+
+.text_shapka .p1 {
+    font-family: 'Angst-Normal';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 90px;
+    color: #3C533A;
+    margin-bottom: 1%;
+}
+
+.text_shapka .p2 {
+    font-family: 'Angst-Normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #465944;
+    width: 709px;
+    margin-bottom: 1%;
+}
+
+.text_shapka button {
+    width: 299px;
+    height: 64px;
+    color: #465944;
+    background: rgba(171, 255, 164, 0.02);
+    opacity: 1;
+    border: 3px solid #3C533A;
+    border-radius: 37px;
+    font-family: 'Angst-Normal';
+    font-size: 24px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.text_shapka button:hover {
+    background: rgba(6, 63, 1, 0.238)
+}
+
+/*--------------------ИНФОРМАЦИЯ ПРО САЛОН----------------*/
+.block1 {
+    position: relative;
+}
+
+.vector3 {
+    position: absolute;
+    left: -6%;
+    top: 0.5%
+}
+
+.block1_inf1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mini_block1 {
+    width: 360px;
+    height: 300px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    padding: 1%;
+    border-radius: 15%;
+    transition: all 0.3s ease
+}
+
+.mini_block1:hover {
+    transform: scale(1.1);
+
+}
+
+.mini_block1 .p1 {
+    font-family: 'Angst-Normal';
+    font-size: 24px;
+    line-height: 34px;
+    text-align: justify;
+    color: #3C533A;
+    margin-bottom: 2%;
+    margin-top: 6%;
+}
+
+.mini_block1 .p2 {
+    width: 329px;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #465944;
+}
+
+.block1_inf2 {
+    margin-top: 4%;
+}
+
+.block1_inf2 .p1 {
+    font-family: 'Angst-Normal';
+    font-size: 32px;
+    color: #3C533A;
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+
+.block1_inf2 .p2 {
+    width: 629px;
+    font-family: 'Montserrat-Regular';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: #465944;
+    margin-left: 2.6%;
+}
+
+.mini_block2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+.block2 {
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/fon3.png);
+    padding-top: 4%;
+    position: relative;
+    margin-top: 2%;
+}
+
+.block2 .p1 {
+    font-family: 'Angst-Bold';
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+
+.vector4 {
+    position: absolute;
+    top: 86%;
+    width: 100%;
+}
+
+.block2 .p2 {
+    font-family: 'Angst-Bold';
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-left: 48%;
+    margin-bottom: 1%;
+}
+
+.block2 button {
+    width: 243px;
+    height: 57px;
+    background: #FFFFFF;
+    border-radius: 29px;
+    border: none;
+    font-family: 'Angst-Normal';
+    font-size: 24px;
+    line-height: 100%;
+    color: #3C533A;
+    margin-left: 64%;
+}
+
+/*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+.zagolovok {
+    font-family: 'Angst-Normal';
+    font-size: 36px;
+    line-height: 50px;
+    color: #3C533A;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.mini_block3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.mini1 {
+    position: relative;
+}
+
+.mini_block3 .p1 {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    font-family: 'Angst-Normal';
+    font-size: 64px;
+    line-height: 90px;
+    color: #3C533A;
+    text-shadow: 3px -4px 4px rgba(255, 255, 255, 0.7);
+}
+
+.mini_block3 .p2 {
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    font-family: 'Angst-Normal';
+    font-size: 64px;
+    line-height: 90px;
+    color: #3C533A;
+    text-shadow: 3px -4px 4px rgba(255, 255, 255, 0.7);
+}
+
+/*-------------------------ЛЮДИ------------------------*/
+.block4 .p1 {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.mini_block4 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 100px;
+}
+
+main {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.chelovek {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chelovek .p1_chel {
+    font-family: 'Angst-Bold';
+    font-size: 24px;
+    line-height: 34px;
+    color: #465944;
+}
+
+.chelovek .p2_chel {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.chelovek .p3_chel {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+
+/*----------------------ГАЛЕРЕЯ------------------------*/
+
+.block5 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    margin-top: 2%;
+}
+
+.gallery:hover {
+    animation-play-state: paused;
+}
+
+.gallery-img {
+    flex: 0 0 auto;
+    width: 480px;
+    height: 380px;
+    margin: 0 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #465944;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.gallery-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 35px #465944;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Создаем дубликаты для бесшовной прокрутки */
+.gallery .gallery-img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gallery .gallery-img:nth-child(2) {
+    animation-delay: -4s;
+}
+
+.gallery .gallery-img:nth-child(3) {
+    animation-delay: -8s;
+}
+
+.gallery .gallery-img:nth-child(4) {
+    animation-delay: -12s;
+}
+
+.gallery .gallery-img:nth-child(5) {
+    animation-delay: -16s;
+}
+
+.gallery .gallery-img:nth-child(6) {
+    animation-delay: -20s;
+}
+
+.gallery .gallery-img:nth-child(7) {
+    animation-delay: -24s;
+}
+
+.gallery .gallery-img:nth-child(8) {
+    animation-delay: -28s;
+}
+
+.gallery .gallery-img:nth-child(9) {
+    animation-delay: -32s;
+}
+
+.gallery .gallery-img:nth-child(10) {
+    animation-delay: -36s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-280px * 10 - 30px * 10));
+    }
+}
+
+/* Градиентные маски по краям */
+.block5::before,
+.block5::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.block5::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.block5::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .gallery-img {
+        width: 220px;
+        height: 140px;
+        margin: 0 10px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-220px * 10 - 20px * 10));
+        }
+    }
+
+    .block5::before,
+    .block5::after {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-img {
+        width: 180px;
+        height: 120px;
+        margin: 0 8px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-180px * 10 - 16px * 10));
+        }
+    }
+}
+
+/* Дополнительные стили для плавности */
+.gallery {
+    will-change: transform;
+}
+
+.gallery-item {
+    will-change: transform;
+}
+
+/*-------------------ДОСТАВКА----------------------*/
+.block6 {
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.content_block6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mini1_block6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mini6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.mini6 .p1 {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+}
+
+.mini6 .p2 {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.mini2_block6 {
+    width: 990px;
+    height: 200px;
+    border: 3px solid #3C533A;
+    border-radius: 0px 28px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.mini2_block6 p {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.mini2_block6 ul {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.mini2_block6 li {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.vector5 {
+    position: absolute;
+    top: 25%;
+    left: -6%;
+}
+
+.vector6 {
+    position: absolute;
+    top: 1%;
+    left: 96.1%;
+}
+
+/*-------------------ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ-------------------*/
+
+.block7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-content {
+    width: 65%;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.faq-item {
+    margin-bottom: 2%;
+    transition: all 0.3s ease;
+    width: 1000;
+    border-bottom: 1.5px solid #054100;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.faq-question {
+    padding: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    transition: color 0.3s ease;
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+}
+
+.faq-question:hover {
+    color: #054100;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 2rem;
+    font-weight: 300;
+    color: #054100;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    min-width: 30px;
+    text-align: center;
+}
+
+.faq-item.active .faq-question::after {
+    content: '−';
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    line-height: 1.7;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding-bottom: 20px;
+}
+
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-item {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.faq-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.faq-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.faq-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.faq-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.faq-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.faq-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* ------------------Контакты------------ */
+.block8 {
+    padding: 3% 5%;
+    background: #3C533A;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 18%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-family: 'Angst-Normal';
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.contact-item {
+    margin-bottom: 5%;
+}
+
+.contact-item h3 {
+    font-family: 'Angst-Normal';
+    font-size: 24px;
+    margin-bottom: 1.5%;
+    margin-top: 10%;
+}
+
+.contact-item p {
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 2.7%;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    width: 500px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.1);
+
+}
+
+/*--------------------------- Футер -------------------*/
+footer {
+    background: white;
+    color: #054100;
+    padding: 3% 2% 2%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-section h3 {
+    font-family: 'Angst-Normal';
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 3%;
+}
+
+.footer-section a {
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    color: #054100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #054100;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #054100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #3C533A;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #054100ae;
+}
+
+.copirait {
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalAppear 0.3s ease;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #3C533A;
+    transition: color 0.3s ease;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #7ba276;
+}
+
+/* Стили для модального окна авторизации */
+.auth-modal {
+    max-width: 500px;
+    padding: 40px 30px;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: #3C533A;
+    font-weight: 600;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3C533A;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-form h2 {
+    font-family: 'Angst-Normal';
+    font-size: 24px;
+    color: #3C533A;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #3C533A;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #7ba276;
+    box-shadow: 0 0 0 3px rgba(123, 162, 118, 0.1);
+}
+
+.form-group small {
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 3px;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox input:checked+.checkmark {
+    background: #3C533A;
+    border-color: #3C533A;
+}
+
+.checkbox input:checked+.checkmark::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forgot-password {
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #7ba276;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #3C533A;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background: #3C533A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background: #7ba276;
+    transform: translateY(-2px);
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.social-login p {
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 120px;
+}
+
+.social-btn.vk {
+    color: #4680C2;
+    border-color: #4680C2;
+}
+
+.social-btn.telegram {
+    color: #0088cc;
+    border-color: #0088cc;
+}
+
+.social-btn.google {
+    color: #DB4437;
+    border-color: #DB4437;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #05410097;
+    right: 20px;
+    bottom: 20px;
+    border: 3px solid #3C533A;
+    border-radius: 22px;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+.btn-up:hover {
+    background-color: #0541006a;
+}
+
+.btn-up::before {
+    content: "";
+    text-align: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 17V4M3 10l7-7 7 7'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Кнопка бургер-меню (скрыта на больших экранах) */
+.burger-btn {
+    display: none;
+    font-size: 25px;
+    color: #3C533A;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* Чекбокс для управления меню (скрыт) */
+.burger-toggle {
+    display: none;
+}
+
+/* Модальное окно меню */
+.burger-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.98);
+    z-index: 1000;
+    justify-content: right;
+    align-items: right;
+    box-shadow: #000000;
+}
+
+/* Содержимое модального окна */
+.burger-modal-content {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Кнопка закрытия в меню */
+.close-burger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: #3C533A;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+
+/* Список пунктов меню */
+.burger-menu-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.burger-menu-list li {
+    margin: 10px 0;
+}
+
+.burger-menu-list a {
+    font-family: 'Angst-Normal';
+    font-size: 18px;
+    color: #3C533A;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.burger-menu-list a:hover {
+    color: #7ba276;
+    border-bottom: 2px solid #7ba276;
+}
+
+/* Кнопка заказа в меню */
+.burger-order-btn {
+    background: #3C533A;
+    color: white !important;
+    padding: 15px 40px !important;
+    border-radius: 30px;
+    margin-top: 20px !important;
+    border: none;
+    font-size: 20px !important;
+}
+
+.burger-order-btn:hover {
+    background: #7ba276;
+    border-bottom: 2px solid transparent !important;
+}
+
+@media (max-width:1440px) {
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    header {
+        height: 800px;
+    }
+
+    .vector1 {
+        width: 300px;
+        height: 100px;
+        margin-top: -9%;
+    }
+
+    .vector1 img {
+        width: 350px;
+    }
+
+    .vector2 {
+        top: 12%;
+        left: 9%;
+        width: 200px;
+    }
+
+    .vector2 img {
+        width: 1300px;
+        height: 600px;
+    }
+
+    .fon {
+        margin-top: -5%;
+    }
+
+    .fon1 {
+        width: 500px;
+        height: 700px;
+    }
+
+    .fon2 {
+        width: 400px;
+        height: 350px;
+    }
+
+
+
+    .text_shapka .p1 {
+        font-size: 44px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 20px;
+    }
+
+    .text_shapka button {
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+
+    /*--------------------ИНФОРМАЦИЯ ПРО САЛОН----------------*/
+    .vector3 {
+        left: -8%;
+        top: -12%;
+        width: 80px;
+    }
+
+    .mini_block1 {
+        width: 280px;
+        height: 250px;
+        margin-top: 3%;
+        padding: 1%;
+
+    }
+
+    .mini_block1 .p1 {
+        font-size: 20px;
+    }
+
+    .mini_block1 .p2 {
+        width: 260px;
+        font-size: 15px;
+    }
+
+    /* МЫ ВЕРИМ, ЧТО КАЖДЫЙ ЦВЕТОК .......... */
+    .block1_inf2 .p1 {
+        font-size: 26px;
+        margin-left: 1%;
+    }
+
+    .block1_inf2 .p2 {
+        width: 529px;
+        font-size: 16px;
+        margin-left: 1%;
+    }
+
+    .mini_block2 img {
+        width: 350px;
+        height: 220px;
+    }
+
+    /*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+    .block2 {
+        height: 300px;
+    }
+
+    .block2 .p1 {
+        font-size: 36px;
+    }
+
+    .block2 .p2 {
+        font-size: 36px;
+    }
+
+    .block2 button {
+        width: 200px;
+        height: 47px;
+        font-size: 20px;
+    }
+
+    /*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+    .zagolovok {
+        font-size: 30px;
+    }
+
+    .mini_block3 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .mini_block3 img {
+        width: 430px;
+    }
+
+    .mini_block3 .p1 {
+        left: 78%;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .mini_block3 .p2 {
+        top: 10%;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    /*-------------------------ЛЮДИ------------------------*/
+    .block4 .p1 {
+        font-size: 18px;
+    }
+
+    .mini_block4 {
+        gap: 80px;
+    }
+
+    .chelovek {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chelovek .p1_chel {
+        font-family: 'Angst-Bold';
+        font-size: 22px;
+        line-height: 34px;
+        color: #465944;
+    }
+
+    .chelovek .p2_chel {
+        font-family: 'Angst-Normal';
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    /*-------------------ДОСТАВКА----------------------*/
+
+
+    .mini6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .mini6 .p2 {
+        font-size: 15px;
+    }
+
+    .mini2_block6 {
+        width: 920px;
+        height: 200px;
+    }
+
+    .mini2_block6 p {
+        font-size: 18px;
+    }
+
+    .mini2_block6 li {
+        font-size: 18px;
+    }
+
+    .vector5 {
+        left: -8.1%;
+        height: 900px;
+        width: 150px;
+    }
+
+    .vector6 {
+        left: 97.1%;
+        height: 900px;
+    }
+
+    /*-------------------ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ-------------------*/
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+    }
+
+    /* ------------------Контакты------------ */
+    .contact-container {
+        gap: 8%;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-item {
+        margin-bottom: 4%;
+    }
+
+    .contact-item h3 {
+        font-size: 22px;
+    }
+
+    .contact-item p {
+        font-size: 16px;
+    }
+
+    /*--------------------------- Футер -------------------*/
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-section a {
+        font-size: 16px;
+    }
+
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-bottom {
+        margin-top: 1%;
+    }
+
+    .copirait {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:1024px) {
+
+    header {
+        height: 768px;
+
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .vector1 {
+        margin-top: -7%;
+    }
+
+    .vector1 img {
+        width: 200px;
+
+    }
+
+    .vector2 {
+        opacity: 0;
+
+    }
+
+    .vector2 img {
+        width: 900px;
+        height: 350px;
+    }
+
+    .fon {
+        margin-top: 0%;
+    }
+
+    .fon1 {
+        width: 300px;
+        height: 400px;
+    }
+
+    .fon2 {
+        width: 200px;
+        height: 250px;
+    }
+
+    .text_shapka {
+        margin-top: -35%;
+        margin-left: 20%;
+
+    }
+
+    .text_shapka .p1 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 16px;
+        width: 550px;
+    }
+
+    .text_shapka button {
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+
+    /*--------------------ИНФОРМАЦИЯ ПРО САЛОН----------------*/
+    .block1_inf1 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: -30%;
+    }
+
+    .mini_block1 {
+        width: 300px;
+        height: 260px;
+        margin-right: 2%;
+    }
+
+    .mini_block1 .p1 {
+        font-size: 18px;
+    }
+
+    .mini_block1 .p2 {
+        width: 270px;
+        font-size: 14px;
+    }
+
+    .block1_inf2 .p1 {
+        font-size: 20px;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .block1_inf2 .p2 {
+        width: 800px;
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 0%;
+    }
+
+    .mini_block2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+    .block2 {
+        height: 250px;
+    }
+
+    .block2 .p1 {
+        font-size: 35px;
+    }
+
+    .block2 .p2 {
+        font-size: 35px;
+    }
+
+    .block2 button {
+        width: 200px;
+        height: 45px;
+        ;
+    }
+
+    /*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+    .zagolovok {
+        font-size: 28px;
+    }
+
+    .mini_block3 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .mini1 {
+        position: relative;
+    }
+
+    .mini1 img {
+        width: 300px;
+    }
+
+    .mini_block3 .p1 {
+        left: 60%;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .mini_block3 .p2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    /*-------------------------ЛЮДИ------------------------*/
+    .block4 .p1 {
+        font-size: 16px;
+    }
+
+    .mini_block4 {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    main {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .chelovek {
+        width: 40%;
+    }
+
+    .chelovek img {
+        width: 230px;
+    }
+
+    .chelovek .p1_chel {
+        font-size: 20px;
+    }
+
+    .chelovek .p2_chel {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .chelovek .p3_chel {
+        font-family: 'Montserrat-Regular';
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+        color: #000000;
+    }
+
+
+    /*----------------------ГАЛЕРЕЯ------------------------*/
+
+
+    .gallery-img {
+        width: 380px;
+        height: 280px;
+    }
+
+    /*-------------------ДОСТАВКА----------------------*/
+    .block6 {
+        margin-bottom: 2%;
+        position: relative;
+    }
+
+    .content_block6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini1_block6 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .mini6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .mini6 img {
+        width: 50px;
+    }
+
+    .mini6 .p1 {
+        font-size: 18px;
+
+    }
+
+    .mini6 .p2 {
+        font-size: 14px;
+    }
+
+    .mini2_block6 {
+        width: 780px;
+        height: 180px;
+    }
+
+    .mini2_block6 p {
+        font-size: 16px;
+    }
+
+    .mini2_block6 ul {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    .mini2_block6 li {
+        font-size: 16px;
+    }
+
+    .vector5 {
+        left: -10%;
+        width: 100px;
+        height: 700px;
+    }
+
+    .vector6 {
+        top: 0%;
+        left: 98.8%;
+        width: 90px;
+        height: 700px;
+    }
+
+    /*-------------------ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ-------------------*/
+
+
+    .faq-question {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    /* ------------------Контакты------------ */
+    .block8 {
+        padding: 3% 5%;
+        background: #3C533A;
+        color: white;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 10%;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .contact-item {
+        margin-bottom: 5%;
+    }
+
+    .contact-item h3 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1.7%;
+        font-size: 14px;
+        width: 400px;
+    }
+
+    .contact-form button {
+        width: 150px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+
+    /*--------------------------- Футер -------------------*/
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 3%;
+    }
+
+    .footer-section a {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .copirait {
+        font-size: 14px;
+    }
+
+    /* Стили для модального окна */
+
+    .modal-content {
+        margin: 1% auto;
+    }
+
+    .close {
+        font-size: 20px;
+    }
+
+
+    /* Стили для модального окна авторизации */
+    .auth-modal {
+        max-width: 400px;
+        padding: 30px 20px;
+    }
+
+    .auth-tabs {
+        margin-bottom: 15px;
+    }
+
+    .tab-btn {
+        flex: 1;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .auth-form h2 {
+        font-family: 'Angst-Normal';
+        font-size: 20px;
+        color: #3C533A;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .form-group small {
+        font-size: 12px;
+    }
+
+    .checkbox {
+        font-size: 12px;
+    }
+
+
+    .btn-primary {
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .social-login {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .social-login p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+
+    .social-btn {
+        padding: 10px;
+        font-size: 14px;
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    /* Показываем кнопку бургер-меню */
+    .burger-btn {
+        display: block;
+    }
+
+    /* Скрываем обычное меню навигации */
+    .menu nav {
+        display: none;
+    }
+
+    /* Показываем модальное окно при нажатии на чекбокс */
+    .burger-toggle:checked~.burger-modal {
+        display: flex;
+    }
+
+    /* Фиксируем шапку при открытом меню */
+    .burger-toggle:checked~.menu {
+        position: fixed;
+        width: 100%;
+        z-index: 1001;
+    }
+}
+
+@media (max-width:768px) {
+
+    header {
+        height: 700px;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    .vector1 {
+        margin-top: -9%;
+    }
+
+    .vector2 {
+        opacity: 0;
+    }
+
+    .vector2 img {
+        width: 1px;
+        height: 1px;
+    }
+
+    .fon {
+        margin-top: 1%;
+
+    }
+
+    .text_shapka {
+        margin-top: -53%;
+        margin-left: 18%;
+
+    }
+
+    .text_shapka .p1 {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 0.2%;
+    }
+
+    .text_shapka .p2 {
+        font-size: 14px;
+        width: 500px;
+    }
+
+    .text_shapka button {
+        width: 170px;
+        height: 38px;
+        border: 2px solid #3C533A;
+        font-size: 14px;
+    }
+
+
+    /*--------------------ИНФОРМАЦИЯ ПРО САЛОН----------------*/
+
+    .mini_block1 {
+        width: 250px;
+        height: auto;
+
+    }
+
+    .mini_block1 img {
+        width: 70px;
+    }
+
+    .mini_block1 .p1 {
+        font-size: 18px;
+    }
+
+    .mini_block1 .p2 {
+        width: 230px;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    .block1_inf2 {
+        margin-top: 4%;
+    }
+
+    .block1_inf2 .p1 {
+        font-size: 24px;
+        margin-left: 4%;
+        text-align: left;
+    }
+
+    .block1_inf2 .p2 {
+        width: 629px;
+        font-size: 16px;
+    }
+
+    .mini_block2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mini_block2 img {
+        width: 280px;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    /*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+    .block2 {
+        width: 100%;
+        height: 300px;
+        background-image: url(./images/fon3.png);
+        padding-top: 4%;
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .block2 .p1 {
+        font-size: 34px;
+        color: #FFFFFF;
+        margin-left: 10%;
+    }
+
+    .block2 .p2 {
+        font-size: 34px;
+        margin-left: 40%;
+    }
+
+    .block2 button {
+        width: 220px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    /*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+    .zagolovok {
+        font-size: 26px;
+    }
+
+    .mini_block3 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .mini1 {
+        position: relative;
+    }
+
+    .mini_block3 img {
+        width: 250px;
+    }
+
+    .mini_block3 .p1 {
+        left: 40%;
+        font-size: 20x;
+        line-height: 40px;
+    }
+
+    .mini_block3 .p2 {
+        top: 0%;
+        left: -30%;
+        font-size: 20x;
+        line-height: 40px;
+    }
+
+    /*-------------------------ЛЮДИ------------------------*/
+    .block4 .p1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mini_block4 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .chelovek {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chelovek .p1_chel {
+        font-size: 20px;
+    }
+
+    .chelovek .p2_chel {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------------ГАЛЕРЕЯ------------------------*/
+
+    .gallery-img {
+        width: 330px;
+        height: 230px;
+    }
+
+    /*-------------------ДОСТАВКА----------------------*/
+    .block6 {
+        margin-bottom: 2%;
+        position: relative;
+    }
+
+    .content_block6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini1_block6 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .mini6 {
+        text-align: center;
+    }
+
+    .mini6 .p1 {
+        font-size: 18px;
+
+    }
+
+    .mini6 .p2 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .mini2_block6 {
+        width: 650px;
+    }
+
+    .mini2_block6 p {
+        font-family: 'Angst-Normal';
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .mini2_block6 ul {
+        margin-top: 1%;
+        margin-left: 3%;
+    }
+
+    .mini2_block6 li {
+        font-family: 'Angst-Normal';
+        font-size: 16px;
+        line-height: 28px;
+        text-align: justify;
+    }
+
+    .mini2_block6 img {
+        width: 200px;
+    }
+
+    .vector5 {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    .vector6 {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    /*-------------------ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ-------------------*/
+
+
+    .faq-content {
+        width: 80%;
+    }
+
+
+    .faq-question {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    /* ------------------Контакты------------ */
+    .block8 {
+        padding: 3% 5%;
+        background: #3C533A;
+        color: white;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        margin: 0 auto;
+        gap: 5%;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px;
+        margin-bottom: 5%;
+    }
+
+    .contact-item {
+        margin-bottom: 5%;
+    }
+
+    .contact-item h3 {
+        font-size: 20px;
+    }
+
+    .contact-item p {
+        font-size: 16px;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 2.7%;
+
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .contact-form button {
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+
+    /*--------------------------- Футер -------------------*/
+    footer {
+        background: white;
+        color: #054100;
+        padding: 3% 5% 2%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-section h3 {
+        font-family: 'Angst-Normal';
+        font-size: 18px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 3%;
+    }
+
+    .footer-section a {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .copirait {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .burger-btn {
+        font-size: 28px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .burger-menu-list a {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+
+    .burger-order-btn {
+        padding: 12px 30px !important;
+        font-size: 18px !important;
+    }
+
+    .close-burger {
+        font-size: 35px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto !important;
+        min-height: 100vh;
+    }
+
+    .information_client {
+        margin-top: 28%;
+    }
+
+    .vector1 {
+        opacity: 0;
+    }
+
+    .text_shapka {
+        margin-top: -100%;
+        margin-left: 10%;
+    }
+
+    .text_shapka .p1 {
+        font-size: 25px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 13px;
+        width: 90% !important;
+        max-width: 330px !important;
+    }
+
+    .fon1 {
+        width: 230px;
+        height: 400px;
+    }
+
+    /*--------------------ИНФОРМАЦИЯ ПРО САЛОН----------------*/
+    .block1 {
+        margin-top: 44%;
+    }
+    .mini_block1 .p1 {
+        font-size: 17px;
+    }
+
+    .mini_block1 .p2 {
+        width: 230px;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    .block1_inf2 {
+        margin-top: 4%;
+    }
+
+    .block1_inf2 .p1 {
+        font-size: 20px;
+        margin-left: 2%;
+    }
+
+    .block1_inf2 .p2 {
+        width: 380px;
+        font-size: 15px;
+    }
+
+    /*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+    .block2 {
+        width: 100%;
+        height: 250px;
+        padding-top: 4%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block2 .p1 {
+        font-size: 25px;
+        color: #FFFFFF;
+        margin-left: 0%;
+    }
+
+    .block2 .p2 {
+        font-size: 25px;
+        margin-left: 0%;
+    }
+
+    .block2 button {
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 0;
+
+    }
+
+    /*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+    .zagolovok {
+        font-size: 22px;
+    }
+
+    .mini_block3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .mini1 {
+        position: relative;
+    }
+
+    .mini_block3 img {
+        width: 200px;
+    }
+
+    .mini_block3 .p1 {
+        left: 50%;
+        top: 50%;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .mini_block3 .p2 {
+        top: 0%;
+        left: -30%;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    /*-------------------------ЛЮДИ------------------------*/
+    .block4 .p1 {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .mini_block4 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .chelovek {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chelovek .p1_chel {
+        font-size: 18px;
+    }
+
+    .chelovek .p2_chel {
+        font-size: 14px;
+    }
+
+    /*-------------------ДОСТАВКА----------------------*/
+    .block6 {
+        margin-bottom: 2%;
+        position: relative;
+    }
+
+    .content_block6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini1_block6 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .mini6 {
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    .mini6 .p1 {
+        font-size: 14px;
+
+    }
+
+    .mini6 .p2 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .mini2_block6 {
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini2_block6 p {
+        font-family: 'Angst-Normal';
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .mini2_block6 ul {
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+
+    .mini2_block6 li {
+        font-family: 'Angst-Normal';
+        font-size: 14px;
+        line-height: 28px;
+        text-align: justify;
+    }
+
+    .mini2_block6 img {
+        width: 150px;
+    }
+
+    .vector5 {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    .vector6 {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
+    /*-------------------ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ-------------------*/
+
+
+    .faq-content {
+        width: 100%;
+        margin-top: -6%;
+    }
+
+
+    .faq-question {
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    /* ------------------Контакты------------ */
+    .block8 {
+        padding: 3% 5%;
+        background: #3C533A;
+        color: white;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 700px;
+        margin: 0 auto;
+        gap: 5%;
+    }
+
+    .contact-info {
+        margin-left: -13%;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+    .contact-item {
+        margin-bottom: 5%;
+    }
+
+    .contact-item h3 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 16px;
+        margin-top: 1%;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 2.7%;
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .contact-form button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+
+    /*--------------------------- Футер -------------------*/
+    footer {
+        background: white;
+        color: #054100;
+        padding: 3% 5% 2%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
+        gap: 10%;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-section h3 {
+        font-family: 'Angst-Normal';
+        font-size: 18px;
+        margin-top: 5%;
+    }
+
+
+    main {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Убедитесь, что все блоки не выходят за границы */
+    * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        height: auto !important;
+        min-height: 65vh;
+    }
+
+    .burger-btn {
+        font-size: 24px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .burger-modal-content {
+        padding: 30px 15px;
+    }
+
+    .burger-menu-list a {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .burger-order-link {
+        padding: 12px 30px !important;
+        font-size: 16px !important;
+    }
+
+    .close-burger {
+        font-size: 30px;
+        top: 10px;
+        right: 15px;
+    }
+
+    .vector1 {
+        margin-top: -15%;
+    }
+
+    .vector1 img {
+        width: 1px;
+    }
+
+    .fon {
+        margin-top: 15%;
+        gap: 10px;
+    }
+
+    .fon1 {
+        width: 200px;
+        height: 250px;
+    }
+
+    .fon2 {
+        width: 150px;
+        height: 180px;
+    }
+
+    .text_shapka {
+        margin-top: -95%;
+    }
+
+    .text_shapka .p1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 13px;
+        line-height: 18px;
+        max-width: 350px;
+    }
+
+    .text_shapka button {
+        width: 150px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .block1_inf1 {
+        margin-top: 20px;
+    }
+
+    .mini_block1 {
+        width: 90%;
+        max-width: 300px;
+        min-height: 200px;
+        margin: 0 auto 20px;
+    }
+
+    .mini_block1 .p1 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .mini_block1 .p2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .block1_inf2 .p1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .block1_inf2 .p2 {
+        font-size: 13px;
+        line-height: 18px;
+        max-width: 350px;
+    }
+
+    .mini_block2 img {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .block2 {
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .block2 img {
+        top: 100%;
+    }
+
+    .block2 .p1,
+    .block2 .p2 {
+        font-size: 24px;
+    }
+
+    .zagolovok {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .mini1 img {
+        width: 220px;
+    }
+
+    .mini_block3 .p1,
+    .mini_block3 .p2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .block4 .p1 {
+        font-size: 13px;
+        line-height: 18px;
+        padding: 0 5px;
+    }
+
+    .mini_block4 {
+        gap: 25px;
+    }
+
+    .chelovek {
+        width: 90%;
+    }
+
+    .chelovek img {
+        width: 180px;
+    }
+
+    .chelovek .p1_chel {
+        font-size: 17px;
+    }
+
+    .chelovek .p2_chel {
+        font-size: 13px;
+    }
+
+    .gallery-img {
+        width: 280px;
+        height: 200px;
+    }
+
+    .mini6 {
+        width: 90%;
+    }
+
+    .mini6 .p1 {
+        font-size: 16px;
+    }
+
+    .mini6 .p2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .zagolovok {
+        line-height: 25px;
+    }
+
+    .mini2_block6 {
+        padding: 15px;
+    }
+
+    .mini2_block6 p {
+        font-size: 16px;
+    }
+
+    .mini2_block6 li {
+        font-size: 13px;
+    }
+
+    .mini2_block6 img {
+        width: 120px;
+    }
+
+    .faq-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+
+    .faq-answer {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .contact-item h3 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        height: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    header {
+        height: auto !important;
+        min-height: 60vh;
+    }
+
+    .vector1 {
+        opacity: 0;
+    }
+
+    .text_shapka {
+        margin-top: -100%;
+        margin-left: 10%;
+    }
+
+    .text_shapka .p1 {
+        font-size: 22px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 12px;
+        width: 90% !important;
+        max-width: 330px !important;
+    }
+
+
+    .fon1 {
+        width: 230px;
+        height: 220px;
+    }
+
+    .text_shapka button {
+        font-size: 10px;
+        height: 30px;
+        line-height: 100%;
+        width: 120px;
+    }
+
+    /*---------------------ВАШИ ЧУВСТВА В ЛЕПЕСТКАХ------------------------*/
+    .block2 {
+        width: 100%;
+        height: 200px;
+        padding-top: 4%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block2 .p1 {
+        font-size: 22px;
+        color: #FFFFFF;
+        margin-left: 0%;
+    }
+
+    .block2 .p2 {
+        font-size: 22px;
+        margin-left: 0%;
+    }
+
+    .block2 button {
+        width: 160px;
+        height: 35px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .block2 img {
+        top: 98%
+    }
+
+    /*---------------------КОЛЛЕКЦИИ---------------------------*/
+
+    .mini_block3 .p1 {
+        left: 30%;
+        top: 50%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .mini_block3 .p2 {
+        top: 0%;
+        left: -15%;
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .text_shapka .p1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .text_shapka .p2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .mini_block1 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .mini_block1 img {
+        width: 50px;
+    }
+
+    .block2 .p1,
+    .block2 .p2 {
+        font-size: 22px;
+    }
+
+    .zagolovok {
+        font-size: 20px;
+    }
+
+    .mini1 img {
+        width: 200px;
+    }
+
+    .gallery-img {
+        width: 250px;
+        height: 180px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+
+
+/* На очень маленьких телефонах */
+@media (max-width: 480px) {
+    .burger-btn {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .burger-menu-list a {
+        font-size: 18px;
+    }
+
+    .burger-order-btn {
+        padding: 10px 25px !important;
+        font-size: 16px !important;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход и регистрация | FLEUR</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #7d9c81 100%);
+            padding: 20px;
+        }
+
+        .auth-container-page {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 30px;
+            animation: slideUp 0.5s ease;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .auth-header h1 {
+            font-family: 'Angst-Normal', sans-serif;
+            color: #3C533A;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .auth-header p {
+            color: #666;
+            font-family: 'Montserrat-Regular', sans-serif;
+        }
+
+        .back-to-main {
+            display: inline-flex;
+            align-items: center;
+            color: #3C533A;
+            text-decoration: none;
+            font-family: 'Montserrat-Regular', sans-serif;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-main:hover {
+            color: #7ba276;
+        }
+
+        .back-to-main::before {
+            content: '←';
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Адаптивность для страницы авторизации */
+        @media (max-width: 768px) {
+            .auth-container-page {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .auth-header h1 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .auth-container-page {
+                padding: 20px 15px;
+                margin: 10px;
+            }
+            
+            .auth-header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-container-page">
+            <a href="index.html" class="back-to-main">На главную</a>
+            
+            <div class="auth-header">
+                <h1>Добро пожаловать в FLEUR</h1>
+                <p>Войдите или зарегистрируйтесь, чтобы делать заказы</p>
+            </div>
+
+            <!-- Переключатель между формами -->
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Вход</button>
+                <button class="tab-btn" data-tab="register">Регистрация</button>
+            </div>
+
+            <!-- Форма входа -->
+            <form id="login-form" class="auth-form active">
+                <h2>Вход в аккаунт</h2>
+
+                <div class="form-group">
+                    <label for="login-phone">Номер телефона</label>
+                    <input type="tel" id="login-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" name="password" placeholder="Введите пароль" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Запомнить меня
+                    </label>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
+                </div>
+
+                <button type="submit" class="btn-primary" onclick="window.location.href = 'akaunt.html'">Войти</button>
+
+                <div class="social-login">
+                    <p>Или войдите через:</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn vk">VK</button>
+                        <button type="button" class="social-btn telegram">Telegram</button>
+                        <button type="button" class="social-btn google">Google</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Форма регистрации -->
+            <form id="register-form" class="auth-form">
+                <h2>Регистрация</h2>
+
+                <div class="form-group">
+                    <label for="register-fio">ФИО</label>
+                    <input type="text" id="register-fio" name="fio" placeholder="Иванов Иван Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-phone">Номер телефона</label>
+                    <input type="tel" id="register-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-social">Ссылка на социальную сеть</label>
+                    <input type="url" id="register-social" name="social" placeholder="https://vk.com/username">
+                    <small>Необязательно</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" name="password" placeholder="Придумайте пароль" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-confirm">Подтверждение пароля</label>
+                    <input type="password" id="register-confirm" name="confirm" placeholder="Повторите пароль" required>
+
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="agreement" required>
+                        <span class="checkmark"></span>
+                        Я соглашаюсь с <a href="#">правилами обработки данных</a>
+                    </label>
+                </div>
+
+                <button type="button" class="btn-primary" onclick="window.location.href='akaunt.html'">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Переключение между вкладками
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.dataset.tab;
+                
+                // Обновляем активные кнопки
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+                
+                // Показываем активную форму
+                document.querySelectorAll('.auth-form').forEach(form => {
+                    form.classList.remove('active');
+                });
+                document.getElementById(`${tab}-form`).classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>

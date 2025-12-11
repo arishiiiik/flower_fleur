@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEUR</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="akaunt.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- меню и шапка -->
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="./images/лого.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="#block1">Акции</a></li>
+                    <li><a href="#block2">История</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="index.html">Выйти</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <label for="burger-toggle" class="burger-btn">☰</label>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+
+
+        <div class="burger-modal">
+            <div class="burger-modal-content">
+                <label for="burger-toggle" class="close-burger">×</label>
+                <ul class="burger-menu-list">
+                    <li><a href="./catalog.html">Каталог</a></li>
+                    <li><a href="#block1">Акции</a></li>
+                    <li><a href="#block2">История</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="index.html">Выйти</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_shapka">
+            <div class="vector1">
+                <img src="./images/Vector1.png" alt="">
+            </div>
+            <div class="vector2">
+                <img src="./images/Vector2.png" alt="">
+            </div>
+            <div class="fon">
+                <img class="fon1" src="./images/fon1.png" alt="">
+                <img class="fon2" src="./images/fon2.png" alt="">
+            </div>
+            <div class="text_shapka">
+                <p class="p1">Личный кабинет</p>
+                <p class="p2">Здесь вы можете отслеживать свои заказы, управлять скидками и просматривать историю
+                    покупок</p>
+                <form action="catalog.html">
+                    <button>Сделать заказ</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- КОНТЕНТНАЯ ЧАСТЬ -->
+    <main>
+        <!-- ЛИЧНАЯ ИНФОРМАЦИЯ КЛИЕНТА -->
+        <div class="information_client" id="personal-info">
+            <h2 class="zagolovok">Личный кабинет</h2>
+            <div class="client-container">
+                <!-- Левая колонка - информация о клиенте -->
+                <div class="client-profile">
+                    <div class="profile-header">
+
+                        <div class="profile-info">
+                            <h3>Филатова Юлия Дмитриевна</h3>
+                            <p class="client-id">ID: FL-00123</p>
+                            <div class="client-stats">
+                                <div class="stat">
+                                    <span class="stat-number">15</span>
+                                    <span class="stat-label">Заказов</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">10 300₽</span>
+                                    <span class="stat-label">Потрачено</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">3 240 ₽</span>
+                                    <span class="stat-label">Сэкономлено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Номер телефона:</span>
+                            <span class="detail-value">+7 (999) 123-45-67</span>
+                            <button class="edit-btn">✎</button>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">filatova_u@example.com</span>
+                            <button class="edit-btn">✎</button>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Дата рождения:</span>
+                            <span class="detail-value">16.04.2006</span>
+                            <button class="edit-btn">✎</button>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Дата регистрации:</span>
+                            <span class="detail-value">12.03.2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка - адреса доставки -->
+                <div class="client-addresses">
+                    <div class="addresses-header">
+                        <h3>Адреса доставки</h3>
+                        <button class="add-address">+ Добавить адрес</button>
+                    </div>
+
+                    <div class="addresses-list">
+                        <div class="address-card">
+                            <div class="address-main">
+                                <h4>Адрес 1</h4>
+                                <p>г. Вологда, ул. Цветочная, д. 15, кв. 45</p>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                            <div class="address-actions">
+                                <button class="edit-btn">Изменить</button>
+                                <button class="delete-btn">Удалить</button>
+                            </div>
+                        </div>
+
+                        <div class="address-card">
+                            <div class="address-main">
+                                <h4>Адрес 2</h4>
+                                <p>г. Вологда, ул. Деловая, д. 25, офис 301</p>
+                                <p>+7 (999) 987-65-43</p>
+                            </div>
+                            <div class="address-actions">
+                                <button class="edit-btn">Изменить</button>
+                                <button class="delete-btn">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- СКИДКИ И АКЦИИ -->
+        <div class="block1" id="block1">
+            <p class="zagolovok">Ваши скидки и акции</p>
+            <div class="block1_inf1"> <!--КАЧЕСТВА-->
+                <div class="skidka">
+                    <p class="p1">10%</p>
+                    <p class="nazv">Постоянная скидка</p>
+                    <p class="p2">Действует на все заказы. Накопительная система: за каждый 5-й заказ скидка
+                        увеличивается на 2%</p>
+                    <div class="line">
+                        <div class="text_line">
+                            <p>До следующего уровня</p>
+                            <p>3/5 заказов</p>
+                        </div>
+                        <img src="./images/line1.png" alt="">
+                    </div>
+                    <button>Использовать скидку</button>
+                </div>
+                <div class="skidka">
+                    <p class="p1">15%</p>
+                    <p class="nazv">Зимняя акция</p>
+                    <p class="p2">Специальная скидка на все букеты с новогодним дизайном. Успейте порадовать близких!
+                    </p>
+                    <div class="line">
+                        <div class="text_line">
+                            <p>До конца акции</p>
+                            <p>30 дней</p>
+                        </div>
+                        <img src="./images/line2.png" alt="">
+                    </div>
+                    <button>Применить акцию</button>
+                </div>
+                <div class="skidka">
+                    <p class="p1">500 ₽</p>
+                    <p class="nazv">Промокод "Новый год"</p>
+                    <p class="p2">Скидка 500 рублей на заказ от 3000 рублей. Действует один раз для нового заказа.</p>
+                    <div class="line">
+                        <div class="text_line">
+                            <p>До следующего уровня</p>
+                            <p>3/5 заказов</p>
+                        </div>
+                        <img src="./images/line1.png" alt="">
+                    </div>
+                    <button>Использовать промокод</button>
+                </div>
+            </div>
+        </div>
+        <!-- ИСТОРИЯ ЗАКАЗОВ -->
+        <div class="block2" id="block2">
+            <p class="zagolovok">история заказов</p>
+            <div class="history">
+                <div class="hist1">
+                    <div class="zagolovok_hist">
+                        <div class="text">
+                            <p class="name">Заказ #FL-0015</p>
+                            <p class="opis">Оформлен 15 марта 2024 • Доставлен 16 марта 2024</p>
+                        </div>
+                        <div class="status">
+                            <button>Доставлен</button>
+                        </div>
+                    </div>
+                    <div class="buket_hist">
+                        <img src="./images/kart7.png" alt="">
+                        <div class="text_buket">
+                            <p class="name_b">Темная ночь</p>
+                            <p class="opis_b">Загадочная композиция в глубоких темных оттенках. Букет для тех, кто ценит
+                                элегантность и таинственность.</p>
+                        </div>
+                        <p class="cena">5 800 ₽</p>
+                    </div>
+                    <div class="knopki">
+                        <button>Повторить заказ</button>
+                        <button>Оставить отзыв</button>
+                    </div>
+                </div>
+                <div class="hist1">
+                    <div class="zagolovok_hist">
+                        <div class="text">
+                            <p class="name">Заказ #FL-0014</p>
+                            <p class="opis">Оформлен 8 марта 2024 • Доставлен 8 марта 2024</p>
+                        </div>
+                        <div class="status">
+                            <button>Доставлен</button>
+                        </div>
+                    </div>
+                    <div class="buket_hist">
+                        <img src="./images/kart9.png" alt="">
+                        <div class="text_buket">
+                            <p class="name_b">Золотой восход</p>
+                            <p class="opis_b">Солнечные герберы и хризантемы дарят радость и оптимизм. Яркие цвета
+                                поднимут
+                                настроение в любой день.</p>
+                        </div>
+                        <p class="cena">3 200 ₽</p>
+                    </div>
+                    <div class="knopki">
+                        <button>Повторить заказ</button>
+                        <button>Оставить отзыв</button>
+                    </div>
+                </div>
+                <div class="hist1">
+                    <div class="zagolovok_hist">
+                        <div class="text">
+                            <p class="name">Заказ #FL-0016</p>
+                            <p class="opis">Оформлен 20 марта 2024 • Ожидает доставки</p>
+                        </div>
+                        <div class="status">
+                            <button>в обработке</button>
+                        </div>
+                    </div>
+                    <div class="buket_hist">
+                        <img src="./images/kart6.png" alt="">
+                        <div class="text_buket">
+                            <p class="name_b">Летний рассвет</p>
+                            <p class="opis_b">Нежные полевые цветы в естественной композиции. Свежесть и простота в
+                                каждом стебле.</p>
+                        </div>
+                        <p class="cena">3 300 ₽</p>
+                    </div>
+                    <div class="knopki">
+                        <button>Отследить заказ</button>
+                        <button>Изменить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- КОНТАКТЫ И ОТЗЫВЫ -->
+        <div class="block3" id="contacts">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Контакты</h2>
+                    <div class="contact-item">
+                        <h3>Адрес</h3>
+                        <p>г. Вологда, ул. Цветочная, д. 15</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>info@fleur.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Время работы</h3>
+                        <p>Пн-Вс: 9:00-22:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Оставьте свой отзыв</h2>
+                    <form>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <textarea placeholder="Ваш отзыв" rows="5" required></textarea>
+                        <label for="file">Прикрепите фото букета:</label>
+                        <input type="file">
+                        <button type="submit" class="cta-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="./images/лого.png" alt="FLEUR" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#personal-info">Личная информация</a></li>
+                    <li><a href="#block1">Акции</a></li>
+                    <li><a href="#block2">История</a></li>
+                    <li><a href="#block3">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Помощь</h3>
+                <ul>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Возврат</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/tg.png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/vp.png" alt="Facebook"></a>
+                    <a href="#"><img src="./images/vk.png" alt="VK"></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-up btn-up_hide"></div>
+
+        <div class="footer-bottom">
+            <p class="copirait">&copy; 2025 FLEUR. Все права защищены.</p>
+        </div>
+    </footer>
+    <script>
+        const btnUp = {
+            el: document.querySelector('.btn-up'),
+            show() {
+                // удалим у кнопки класс btn-up_hide
+                this.el.classList.remove('btn-up_hide');
+            },
+            hide() {
+                // добавим к кнопке класс btn-up_hide
+                this.el.classList.add('btn-up_hide');
+            },
+            addEventListener() {
+                // при прокрутке содержимого страницы
+                window.addEventListener('scroll', () => {
+                    // определяем величину прокрутки
+                    const scrollY = window.scrollY || document.documentElement.scrollTop;
+                    // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+                    scrollY > 400 ? this.show() : this.hide();
+                });
+                // при нажатии на кнопку .btn-up
+                document.querySelector('.btn-up').onclick = () => {
+                    // переместим в начало страницы
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+        btnUp.addEventListener();
+    </script>
+</body>
+
+</html>
